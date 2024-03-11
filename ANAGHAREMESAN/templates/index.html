@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+
+<section class="header-container">
+  <img class="profile-image" src="static/assets/anagha.jpeg" alt="profile" />
+  <h1>Hey! I'm ANAGHA REMESAN </h1>
+
+  <div class="content-text">
+    <h2>HIRE ME </h2>
+    <p>
+     PYTHON - FULL STACK DEVELOPER <br>Myself ANAGHA REMESAN coming from Pathanamthitta,hagdhagfgfjhgfjhbfjfgahfghabbfkahfjafhahkjfafyagfaaafgaggafajgfaffakjhfkaj
+    </p>
+  </div>
+  <a href="#footer" class="btn btn-secondary">Connect With Me</a>
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Special Skills</h2>
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-cogs"></i></h2>
+              <h4>
+                Communication skills</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-bug"></i></h2>
+              <h4>Object-relational mappers</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-code"></i></h2>
+              <h4>
+                Web frameworks</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-server"></i></h2>
+              <h4>Python libraries</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-cloud"></i></h2>
+              <h4>mysql,sqlite,dbsqlite3</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-linux"></i></h2>
+              <h4>django</h4>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Popular Project</h2>
+    <p>Check out some of my projects</p>
+  </div>
+
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <img src="https://github.com/dmdhrumilmistry/pyhtools/blob/main/.images/PyHTools.png?raw=True"
+              alt="Pyhtools image" style="width: auto; max-width: 100%;">
+          </td>
+          <td>
+            <div class="container">
+              <h3>ECOMMERCE</h3>
+              <p style="text-align: justify;">An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
+
+                It’s tough to imagine daily life without e-commerce. We order food, clothes, and furniture; we register for classes and other online services; we download books, music, and movies; and so much more. E-commerce has taken root and is here to stay.
+                
+                The term “e-commerce” simply means the sale of goods or services on the internet. In its most basic form, e-commerce involves electronically transferring funds and data between 2 or more parties. This form of business has evolved quite a bit since its beginnings in the electronic data interchange of the 1960s and the inception of online shopping in the 1990s.</p>
+              <a href="https://github.com/anaghasynnefo/HARVESTHAVEN.git" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a href="{{url_for('projects_page')}}" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+</section>
+{% endblock %}

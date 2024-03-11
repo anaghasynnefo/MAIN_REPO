@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<div class="container-fluid  px-0">
+  <img class="can " style="margin-top:-106px;   margin-bottom: 50px;" src="../static/images/.jpg"  width="100%" height="800" alt="">
+  
+  </div>
+  
+
+  {% if category %}
+  <div class="container-fluid mb-3">
+  
+   <h1 class="hed mt-5 mb-2">{{category.name}}</h1>
+   <img class="can rounded-5 " src="{{category.image.url}}" style="margin-left: 600px;" width="560px" height="300" alt="">
+   <h5 class="des mt-4 mb-3 pb-3 pt-3">{{category.desc}}</h5></div>
+  {% else %}
+  
+  
+  
+  {% endif %}
+  <div class="container-fluid">
+      <div class="card-group mb-3" >
+        {% for i in products %}
+          {% if i.available %}
+          <a href="{% url 'shop:details' i.id %}">
+          <div class="cad border p-3 mb-5 bg-body rounded mb-4 me-2 mr-5" style="padding-left: 200px;">
+            <img src="{{i.image.url}}" height="270px" class="card-img-top rounded-4" alt="...">
+            <div class="card-body" style="margin-left: 70px;">
+              <h4 class="card-title">{{i.name}}</h4>
+              <h6 class="card-text" style="color: blue;">${{i.price}}</h6>
+              
+            </div>
+          </div>
+          </a>
+          {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+  
+    
+<div class="img d-flex justify-content-center" >
+  <img class="aa rounded-5  mb-5" src="../static/images/vivo1.jpg" width="70%" height="600" alt="">
+  <div class="text-block">
+    <h1>HARVEST HAVEN</h1>
+    <h4>EXPLORE HERE FOR HOMELY PRODUCTS</h4>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <img class=" rounded-5  mb-5" src="../static/images/vivo2.jpg" width="70%" height="600" alt="">
+  <div class="text-block">
+    <h1>T20 Pro 5G</h1>
+    <h4>Get.Set.Turbo</h4>
+  </div>
+</div>
+
+
+  
+
+  <div class="container-fluid mb-3">
+    <h1 class="hed text-center mt-5 mb-2">DISCOVER</h1>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ms-5">
+    <div class="aa col">
+        <img class="img-fluid rounded-5 " src="../static/images/vivor3.jpg" alt="">
+        <img class="img-fluid rounded-5 mt-3" src="../static/images/vivor4.jpg" alt="">
+    </div>
+    <div class="col">
+        <img class="img-fluid rounded-5 mr-5" src="../static/images/vivor5.jpg" alt="">
+    </div>
+    <div class="col">
+        <img class="img-fluid rounded-5" src="../static/images/vivor6.jpg" alt="">
+        <img class="img-fluid rounded-5 mt-3" src="../static/images/vivor7.jpg" alt="">
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

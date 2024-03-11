@@ -1,0 +1,146 @@
+.des{
+  text-align: center;
+  margin-left: 84px;
+  margin-right: 100px;
+  font-style: oblique;
+}
+.hed{
+    text-align: center;
+    font-weight: 900;
+    font-style:oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.card-group{
+  width: 97vw;
+  margin-left:86px;
+}
+.card-group img{
+  width: 260px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+  
+
+.card-group a{
+  text-decoration: none;
+  color: black;
+}
+.col2{
+  margin-top: 220px;
+}
+.col1{
+  margin-top: 40px;
+}
+.cd{
+  height: 58vh;
+  width: 22vw;
+  margin-top: 130px;
+}
+.cd img{
+  height: 58vh;
+  width: 20vw;
+}
+.conta{
+  height: 98vh
+}
+
+.abcd{
+  margin-left: 800px;
+  
+}
+body{
+  overflow-x: hidden;
+}
+
+
+.hed2{
+  text-align: center;
+  font-weight: 900;
+  padding-top: 50px;
+}
+.to{
+  height: 340px;
+  margin-top: 34px;
+  margin-bottom: 300px;
+}
+.prpr{
+  margin-left: 645px;
+}
+.sav{
+  color: rgb(16, 150, 45);
+}
+.tt{
+  margin-left: 100px;
+  font-weight: 800px;
+}
+.TOT{
+  font-weight: 600;
+}
+.pp{
+  font-weight: 700;
+}
+.pp h3{
+  color: rgb(89,90,90);
+}
+.ds{
+  font-weight: 590;
+}
+.dss{
+  margin-left: 170px;
+  color: rgb(18,167,63);
+}
+.crtimg{
+  width: 135px;
+}
+.cn{
+  margin-top: 88px;
+  margin-left: 80px;
+}
+  
+
+  
+
+  
+.centered {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.d-flex {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 170px;
+  left: 200px;
+  
+  color: black;
+  margin-left: 200px;
+  padding-right: 20px;
+}
+
+.navbar-brand{
+margin-right: 200px;
+}
+
+
+
+.navbar_transparent{
+    
+ height: auto;
+ 
+  }
+
+  .hhh{
+    margin-right: 70px;
+  }
+  .hh{
+    margin-left: 50px;
+  }
